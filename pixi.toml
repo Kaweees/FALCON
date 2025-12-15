@@ -2,7 +2,7 @@
 authors = ["Miguel Villa Floran <miguel.villafloran@gmail.com>"]
 channels = ["conda-forge"]
 name = "hello-world"
-platforms = ["linux-64"]
+platforms = ["linux-64", "linux-aarch64"]
 version = "0.1.0"
 
 [tasks]
@@ -21,6 +21,8 @@ numpy = ">=1.24"
 cmake = "*"
 make = "*"
 cxx-compiler = "*"
+open3d = ">=0.18.0"
+evdev = "*"
 
 xorg-libx11 = "*"
 xorg-libxext = "*"
@@ -42,7 +44,6 @@ mujoco = ">=3.4.0"
 numpy-stl = ">=3.2.0"
 onnx = ">=1.20.0"
 onnxruntime = ">=1.23.2"
-open3d = ">=0.19.0"
 opencv-python = ">=4.11.0.86"
 plotly = ">=6.5.0"
 pygame = ">=2.6.1"
