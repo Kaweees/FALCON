@@ -22,7 +22,7 @@ SIMULATE_DT: 0.005  # Need to be larger than the runtime of viewer.sync()
 VIEWER_DT: 0.02  # Viewer update time
 USE_SENSOR: False
 
-USE_JOYSTICK: 0 # Simulate Unitree WirelessController using a gamepad (0: disable, 1: enable)
+USE_JOYSTICK: 1 # Simulate Unitree WirelessController using a gamepad (0: disable, 1: enable)
 JOYSTICK_TYPE: "xbox" # support "xbox" and "switch" gamepad layout
 JOYSTICK_DEVICE: 0 # Joystick number
 

@@ -38,7 +38,7 @@ INTERFACE: "lo"
 SDK_TYPE: "unitree" # SDK type, "unitree", "booster"
 MOTOR_TYPE: "serial" # Motor type, "serial" or "parallel"
 
-USE_JOYSTICK: 0 # Simulate Unitree WirelessController using a gamepad (0: disable, 1: enable)
+USE_JOYSTICK: 1 # Simulate Unitree WirelessController using a gamepad (0: disable, 1: enable)
 JOYSTICK_TYPE: "xbox" # support "xbox" and "switch" gamepad layout; Unitree WirelessController is "xbox" layout.
 ```
 
