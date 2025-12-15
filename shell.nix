@@ -33,8 +33,11 @@ pkgs.mkShell {
     export LIBGL_ALWAYS_SOFTWARE=1
     export MESA_GL_VERSION_OVERRIDE=3.3
 
-    export CFLAGS="-I$CYCLONEDDS_HOME/include/idlc $CFLAGS"
-    export UV_PYTHON="${pkgs.python311}/bin/python"
+    export CFLAGS="-DKEY_ALL_APPLICATIONS=0 \
+      -DKEY_LINK_PHONE=0 \
+      -DKEY_REFRESH_RATE_TOGGLE=0 \
+      -DKEY_DICTATE=0 \
+      -I$CYCLONEDDS_HOME/include/idlc $CFLAGS"    export UV_PYTHON="${pkgs.python311}/bin/python"
     export TMPDIR=/tmp
   '';
 }
