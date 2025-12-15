@@ -127,13 +127,14 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/31/28/d28211d29bcc3620b1fece85a65ce5bb22f18670a03cd28ea4b75ede270c/configargparse-1.7.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/5f/4b/6157f24ca425b89fe2eb7e7be642375711ab671135be21e6faa100f7448c/contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/62/88/4b440f5916976234838989c3214222a5abc6fd48009a992c4dc22a86c04f/cyclonedds-0.10.2.tar.gz
+      - pypi: direct+https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/cb/cf/a4853e5b2b2bea55ae909095a8720b3ed50d07bdd40cbeafcedb5a6c47da/dash-3.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/4e/8c/f3147f5c4b73e7550fe5f9352eaa956ae838d5c51eb58e7a25b9f3e2643b/decorator-5.2.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/05/ec/fa6963f1198172c2b75c9ab6ecefb3045991f92f75f5eb41b6621b198123/easydict-1.13-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e7/98/87b5946356095738cb90a6df7b35ff69ac5750f6e783d5fbcc5cb3b6cbd7/etils-1.13.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/63/fe/a17c106a1f4061ce83f04d14bcedcfb2c38c7793ea56bfb906a6fadae8cb/evdev-1.9.2.tar.gz
       - pypi: https://files.pythonhosted.org/packages/c1/ea/53f2148663b321f21b5a606bd5f191517cf40b7072c0497d3c92c4a13b1e/executing-2.2.1-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/09/02/2514f5b5dfa6f7b71a24b924c2e0de3dbdcd9b6d5a855661c991e1f4c285/fastcrc-0.3.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/cb/a8/20d0723294217e47de6d9e2e40fd4a9d2f7c4b6ef974babd482a59743694/fastjsonschema-2.21.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/f9/7f9263c5695f4bd0023734af91bedb2ff8209e8de6ead162f35d8dc762fd/flask-3.1.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ee/1b/00a78aa2e8fbd63f9af08c9c19e6deb3d5d66b4dda677a0f61654680ee89/flatbuffers-25.9.23-py2.py3-none-any.whl
@@ -234,7 +235,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/c7/b0/003792df09decd6849a5e39c28b513c06e84436a54440380862b5aeff25d/tzdata-2025.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b1/5e/512aeb40fd819f4660d00f96f5c7371ee36fc8c6b605128c5ee59e0b28c6/u_msgpack_python-2.8.0-py2.py3-none-any.whl
-      - pypi: git+https://github.com/Oya-Tomo/unitree_sdk2_python.git?branch=master#dc85ee35a5272f83915ac08027bbe5adf99af42e
+      - pypi: git+https://github.com/carlosdp/unitree_sdk2_python.git?branch=proper-python-modules#22be3cf52150124eff96639913efb2a6de7ae4c0
       - pypi: https://files.pythonhosted.org/packages/6d/b9/4095b668ea3678bf6a0af005527f39de12fb026516fb3df17495a733b7f8/urllib3-2.6.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/5c/ee/9a8bb9a39cc1f09c3060456cc79565110226dc4099a719af5c63432da21d/wandb-0.23.1-py3-none-manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/af/b5/123f13c975e9f27ab9c0770f514345bd406d0e8d3b7a0723af9d43f710af/wcwidth-0.2.14-py2.py3-none-any.whl
@@ -581,10 +582,9 @@ packages:
   - pytest-cov ; extra == 'tests'
   - pytest-xdist ; extra == 'tests'
   requires_python: '>=3.8'
-- pypi: https://files.pythonhosted.org/packages/62/88/4b440f5916976234838989c3214222a5abc6fd48009a992c4dc22a86c04f/cyclonedds-0.10.2.tar.gz
+- pypi: direct+https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
   name: cyclonedds
-  version: 0.10.2
-  sha256: f834962eabbdcdf4e9cd75cf87222f3c5ef22d9cb9e7ed651d9a8710fe984a30
+  version: 0.10.5
   requires_dist:
   - typing-inspect>=0.6 ; python_full_version < '3.7'
   - typing-extensions>=3.7 ; python_full_version < '3.9'
@@ -789,6 +789,11 @@ packages:
   - littleutils ; extra == 'tests'
   - rich ; python_full_version >= '3.11' and extra == 'tests'
   requires_python: '>=3.8'
+- pypi: https://files.pythonhosted.org/packages/09/02/2514f5b5dfa6f7b71a24b924c2e0de3dbdcd9b6d5a855661c991e1f4c285/fastcrc-0.3.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  name: fastcrc
+  version: 0.3.4
+  sha256: 5f3dc7912021002c90ec741a2077dfae9ecc46fb51aaa0e338a264197dfb55d3
+  requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/cb/a8/20d0723294217e47de6d9e2e40fd4a9d2f7c4b6ef974babd482a59743694/fastjsonschema-2.21.2-py3-none-any.whl
   name: fastjsonschema
   version: 2.21.2
@@ -3411,14 +3416,26 @@ packages:
   name: u-msgpack-python
   version: 2.8.0
   sha256: 1d853d33e78b72c4228a2025b4db28cda81214076e5b0422ed0ae1b1b2bb586a
-- pypi: git+https://github.com/Oya-Tomo/unitree_sdk2_python.git?branch=master#dc85ee35a5272f83915ac08027bbe5adf99af42e
+- pypi: git+https://github.com/carlosdp/unitree_sdk2_python.git?branch=proper-python-modules#22be3cf52150124eff96639913efb2a6de7ae4c0
   name: unitree-sdk2py
   version: 1.0.1
   requires_dist:
-  - cyclonedds==0.10.2
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp311-cp311-macosx_10_9_x86_64.whl ; python_full_version == '3.11.*' and platform_machine == 'x86_64' and sys_platform == 'darwin'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp312-cp312-macosx_10_9_x86_64.whl ; python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'darwin'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp313-cp313-macosx_10_13_x86_64.whl ; python_full_version == '3.13.*' and platform_machine == 'x86_64' and sys_platform == 'darwin'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp311-cp311-macosx_11_0_arm64.whl ; python_full_version == '3.11.*' and platform_machine == 'arm64' and sys_platform == 'darwin'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp312-cp312-macosx_11_0_arm64.whl ; python_full_version == '3.12.*' and platform_machine == 'arm64' and sys_platform == 'darwin'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp313-cp313-macosx_11_0_arm64.whl ; python_full_version == '3.13.*' and platform_machine == 'arm64' and sys_platform == 'darwin'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl ; python_full_version == '3.11.*' and platform_machine == 'aarch64' and sys_platform == 'linux'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl ; python_full_version == '3.12.*' and platform_machine == 'aarch64' and sys_platform == 'linux'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl ; python_full_version == '3.13.*' and platform_machine == 'aarch64' and sys_platform == 'linux'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl ; python_full_version == '3.11.*' and platform_machine == 'x86_64' and sys_platform == 'linux'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl ; python_full_version == '3.12.*' and platform_machine == 'x86_64' and sys_platform == 'linux'
+  - cyclonedds @ https://github.com/carlosdp/cyclonedds-python/releases/download/0.10.5/cyclonedds-0.10.5-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl ; python_full_version == '3.13.*' and platform_machine == 'x86_64' and sys_platform == 'linux'
+  - fastcrc>=0.3.2
   - numpy
   - opencv-python
-  requires_python: '>=3.8'
+  requires_python: '>=3.11'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/urdfdom-4.0.1-h2e5d1f2_2.conda
   sha256: e8c256eb6fd862445abc0efb2a38b88993e77edadcdc35536efeb1cb13baae6a
   md5: c251c3c8818541801841f5c7d69454e9

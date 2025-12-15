@@ -48,5 +48,5 @@ sshkeyboard = ">=2.3.1"
 tensorboard = ">=2.20.0"
 termcolor = ">=3.2.0"
 tqdm = ">=4.67.1"
-unitree-sdk2py = { git = "https://github.com/Oya-Tomo/unitree_sdk2_python.git", branch = "master" }
+unitree-sdk2py = { git = "https://github.com/carlosdp/unitree_sdk2_python.git", branch = "proper-python-modules" }
 wandb = ">=0.23.1"
