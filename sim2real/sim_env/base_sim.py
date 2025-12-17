@@ -43,12 +43,6 @@ class BaseSimulator:
     def init_factory(self):
         if self.sdk_type == "unitree":
             if self.config.get("INTERFACE", None):
-                if sys.platform == "linux":
-                    self.config["INTERFACE"] = "lo"
-                elif sys.platform == "darwin":
-                    self.config["INTERFACE"] = "lo0"
-                else:
-                    raise NotImplementedError("Only support Linux and MacOS.")
                 ChannelFactoryInitialize(self.config["DOMAIN_ID"], self.config["INTERFACE"])
             else:
                 ChannelFactoryInitialize(self.config["DOMAIN_ID"])
